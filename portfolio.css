@@ -11,10 +11,9 @@ body{
     display: flex;
 }
 .hello{
-    width:40%;
-    height: 40%;
+    width:35%;
     padding-left: 2%;
-    animation: light 1.5s ease-in-out infinite alternate 7s;
+    animation: light 1.5s ease-in-out infinite alternate 4s;
 }
 @keyframes light {
     from{
@@ -32,18 +31,19 @@ body{
     font-size: 27em;
     font-family: Montserrat;
     /*font-family: Dancing Script;*/
-    animation: gayab 5s ease 4s;
+    animation: gayab 3s ease-in-out ;
     margin-top: 7%;
 }
 @keyframes gayab {
     0% {
         color: black;
     }
-    100%{
+    50%{
         color: white;
 
     }
 }
+
 
 .div-bulbula{
     display: flex;
@@ -62,13 +62,7 @@ body{
     letter-spacing: 8px;
     margin-bottom: -10px;
     font-size: 60px;
-    animation: animation 3s 1 ;
-}
-.name{
-    color:white;
-    font-size: 70px;
-    margin-top: -15px ;
-    letter-spacing: 8px;
+    /*animation: animation 2s 1 3s;*/
 }
 @keyframes animation {
     0%{
@@ -78,16 +72,41 @@ body{
         margin-bottom: -30px;
     }
 
+    /*75%{*/
+    /*    color:black;*/
+
+    /*}*/
+
    100%{
        font-size: 60px;
        letter-spacing: 8px;
        margin-bottom: -5px;
    }
 }
-
+.name{
+    color: white;
+    animation: name 5s 1 ;
+    font-family: Montserrat;
+    font-size: 70px;
+    margin-top: -15px ;
+    letter-spacing: 8px;
+}
+@keyframes name {
+    /*    0%{
+    /*        color: black;*/
+    /*        font-size: 90px;*/
+    /*        letter-spacing: 9px;*/
+    /*    }*/
+    25% {
+        /*font-size: 70px;*/
+        /*color: white;*/
+                color: black;
+                margin-bottom: -30px;
+                letter-spacing: 9px;
+    }
+}
 header{
     position: fixed;
-
 }
 .div-text{
     text-align: center;
@@ -177,7 +196,6 @@ header:hover{
     }
 }
 
-
 .text-udit {
     color: white;
     font-family: Ubuntu;
@@ -248,6 +266,9 @@ span:nth-child(8){
     padding-left: 9%;
     display: flex;
 }
+#id{
+    padding-left: 12%;
+}
 .skill-2{
     color: #e66d42;
     font-size: 4rem;
@@ -267,5 +288,43 @@ span:nth-child(8){
     margin-top: -33%;
     float: right;
     padding-left: 60%;
+}
+.four{
+    display: flex;
+    flex-direction: column;
+}
+.text-project{
+    color: #e66d42;
+    margin-top: 10%;
+    font-size: 8.5rem;
+    font-family: Montserrat;
+    padding-left: 3%;
+    letter-spacing: 1rem;
+    animation: hawai 3s infinite ;
+    margin-bottom: 0;
+}
+@keyframes hawai {
+    0% {
+        transform: translateY(-10px);
+        color: white;
+    }
+    50%{
+        transform: translateY(10px);
+        color: #e66d42;
+    }
+    100%{
+        transform: translateY(-10px);
+        color: white;
+    }
+}
+.img-project-2{
+    width: 900px;
+    padding: 3%;
+}
+.project-2>a{
+    width:800px;
+}
+.img-project-2:hover{
+    transform: scale(1.2);
 }
 
