@@ -249,9 +249,11 @@ span:nth-child(8){
 @keyframes skills {
     0%,10%,20%,30%,40%,50%,60%,70%{
         color: white;
+        text-shadow: 1px 1px 20px #ffffff;
     }
     5%,15%,25%,35%,45%,55%,66%,75%,100%{
         color: #e66d42;
+        text-shadow: 1px 1px 20px #e66d42;
     }
 }
 .skills-name{
@@ -317,14 +319,7 @@ span:nth-child(8){
         color: white;
     }
 }
-.img-project-2{
-    width: 900px;
-    padding: 3%;
-}
-.project-2>a{
-    width:800px;
-}
-.img-project-2:hover{
-    transform: scale(1.2);
+.four{
+    display: flex;
 }
 
