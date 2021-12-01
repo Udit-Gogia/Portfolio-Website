@@ -330,6 +330,7 @@ span:nth-child(8){
 .img-project-1{
     width:90%;
     margin:  0 0 5% 2%;
+    transition: color 3s;
 }
 .project-1{
     display: flex;
@@ -342,10 +343,12 @@ span:nth-child(8){
     text-align: center;
     padding-right: 20%;
     margin-top: 35%;
+    transition: color 3s;
 }
 .img-project-2{
     width: 60%;
     margin:  7% 0 5% 5%;
+    transition: color 3s;
 }
 .text-project-2{
     color: white;
@@ -354,5 +357,23 @@ span:nth-child(8){
     text-align: center;
     padding-left: 5%;
     padding-top: 52%;
+
 }
+.text-project-3{
+    color: white;
+    font-size: 2rem;
+    font-family: Montserrat;
+    text-align: center;
+    padding-right: 20%;
+    /*transition: color 3s;*/
+}
+.img-project-3{
+    width:90%;
+    margin:  5% 0 5% 2%;
+    transition: color 3s;
+}
+.img-project-1:hover,.img-project-2:hover,.img-project-3:hover .text-project-3,.text-project-1,.text-project-2{
+        color: #e66d42;
+}
+
 
