@@ -124,7 +124,7 @@ nav{
     background-color: black;
 }
 
-a{
+nav>a{
     text-decoration: none;
     color: white;
     font-family: Montserrat;
@@ -313,6 +313,7 @@ span:nth-child(8){
     50%{
         transform: translateY(10px);
         color: #e66d42;
+
     }
     100%{
         transform: translateY(-10px);
@@ -321,5 +322,37 @@ span:nth-child(8){
 }
 .four{
     display: flex;
+    flex-direction: column;
+}
+.projects{
+    margin-bottom: 2%;
+}
+.img-project-1{
+    width:90%;
+    margin:  0 0 5% 2%;
+}
+.project-1{
+    display: flex;
+    flex-direction: row;
+}
+.text-project-1{
+    color: white;
+    font-size: 2rem;
+    font-family: Montserrat;
+    text-align: center;
+    padding-right: 20%;
+    margin-top: 35%;
+}
+.img-project-2{
+    width: 60%;
+    margin:  7% 0 5% 5%;
+}
+.text-project-2{
+    color: white;
+    font-size: 2rem;
+    font-family: Montserrat;
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 52%;
 }
 
