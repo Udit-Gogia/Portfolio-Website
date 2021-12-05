@@ -11,7 +11,7 @@ body{
     display: flex;
 }
 .hello{
-    width:35%;
+    width:28%;
     padding-left: 2%;
     animation: light 1.5s ease-in-out infinite alternate 4s;
 }
@@ -43,12 +43,10 @@ body{
 
     }
 }
-
-
 .div-bulbula{
     display: flex;
     flex-direction: column;
-    margin-left: 22%;
+    margin-left: 31%;
     margin-top: 5%;
 }
 .bulbula{
@@ -60,9 +58,9 @@ body{
 .im{
     color:#e66d42;
     letter-spacing: 8px;
-    margin-bottom: -10px;
-    font-size: 60px;
-    /*animation: animation 2s 1 3s;*/
+    margin-bottom: -12px;
+    font-size: 70px;
+    animation: animation 2s 1 2s;
 }
 @keyframes animation {
     0%{
@@ -71,23 +69,21 @@ body{
         letter-spacing: 16px;
         margin-bottom: -30px;
     }
-
     /*75%{*/
     /*    color:black;*/
 
     /*}*/
-
    100%{
        font-size: 60px;
        letter-spacing: 8px;
-       margin-bottom: -5px;
+       margin-bottom: -10px;
    }
 }
 .name{
     color: white;
-    animation: name 5s 1 ;
+    animation: name 3s ease-in-out 2s;
     font-family: Montserrat;
-    font-size: 70px;
+    font-size: 80px;
     margin-top: -15px ;
     letter-spacing: 8px;
 }
@@ -97,12 +93,12 @@ body{
     /*        font-size: 90px;*/
     /*        letter-spacing: 9px;*/
     /*    }*/
-    25% {
+    0%{
         /*font-size: 70px;*/
         /*color: white;*/
                 color: black;
-                margin-bottom: -30px;
-                letter-spacing: 9px;
+                /*margin-bottom: -30px;*/
+                letter-spacing: 8px;
     }
 }
 header{
@@ -111,7 +107,7 @@ header{
 .div-text{
     text-align: center;
     font-family: Montserrat;
-    margin-top: 20%;
+    margin-top: 15%;
     font-size: 35px;
 }
 
@@ -307,30 +303,36 @@ span:nth-child(8){
 }
 @keyframes hawai {
     0% {
-        transform: translateY(-10px);
-        color: white;
-    }
-    50%{
-        transform: translateY(10px);
         color: #e66d42;
-
     }
-    100%{
-        transform: translateY(-10px);
+
+
+    50%{
+        letter-spacing: 2rem;
         color: white;
+        text-shadow: 0 0 10px #e66d42,
+        0 0 20px #e66d42,
+        0 0 40px #e66d42,
+        0 0 80px #e66d42,
+        0 0 160px #e66d42;
+    }
+
+    100%{
+        color: #e66d42;
     }
 }
 .four{
     display: flex;
     flex-direction: column;
 }
-.projects{
-    margin-bottom: 2%;
-}
 .img-project-1{
-    width:90%;
-    margin:  0 0 5% 2%;
-    transition: color 3s;
+    width:80%;
+    margin:  -7% 0 5% 10%;
+    border-radius: 40px;
+    transition: border-radius 1s;
+}
+.img-project-1:hover,.img-project-2:hover,.img-project-3:hover{
+    border-radius: 0;
 }
 .project-1{
     display: flex;
@@ -342,13 +344,13 @@ span:nth-child(8){
     font-family: Montserrat;
     text-align: center;
     padding-right: 20%;
-    margin-top: 35%;
-    transition: color 3s;
+    margin-top: 15%;
 }
 .img-project-2{
     width: 60%;
-    margin:  7% 0 5% 5%;
-    transition: color 3s;
+    margin:  7% 0 5% 3%;
+    border-radius: 40px;
+    transition: border-radius 1s;
 }
 .text-project-2{
     color: white;
@@ -365,15 +367,39 @@ span:nth-child(8){
     font-family: Montserrat;
     text-align: center;
     padding-right: 20%;
-    /*transition: color 3s;*/
 }
 .img-project-3{
-    width:90%;
-    margin:  5% 0 5% 2%;
-    transition: color 3s;
+    width: 80%;
+    margin:  5% 0 5% 8%;
+    border-radius: 40px;
+    transition: border-radius 1s;
 }
-.img-project-1:hover,.img-project-2:hover,.img-project-3:hover .text-project-3,.text-project-1,.text-project-2{
-        color: #e66d42;
+svg{
+    height: 50vh;
+    width: 50vw;
 }
+svg text{
+    stroke:white;
+    font-size: 245px;
+    font-weight: 500;
+    stroke-width: 5;
+    transform: translate(40px,140px);
+    font-family: Montserrat;
+    animation: text 3s infinite;
+}
+@keyframes text{
+    0%{
+        stroke-dasharray: 0 50%;
+        text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42, 0 0 25px #e66d42,;
+    }
 
+    50%{
+        stroke-dasharray: 100% 0;
+        text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42 , 0 0 25px #e66d42;
+    }
+    100%{
+        stroke-dasharray: 0 50%;
+        text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42, 0 0 25px #e66d42,;
+    }
+}
 
