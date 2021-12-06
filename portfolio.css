@@ -11,7 +11,7 @@ body{
     display: flex;
 }
 .hello{
-    width:28%;
+    width: 28%;
     padding-left: 2%;
     animation: light 1.5s ease-in-out infinite alternate 4s;
 }
@@ -28,11 +28,11 @@ body{
 
 }
 .hello-text{
-    font-size: 27em;
+    font-size: 25em;
     font-family: Montserrat;
-    /*font-family: Dancing Script;*/
-    animation: gayab 3s ease-in-out ;
+    animation: gayab 4s ease-in-out ;
     margin-top: 7%;
+    letter-spacing: 20px;
 }
 @keyframes gayab {
     0% {
@@ -41,6 +41,9 @@ body{
     50%{
         color: white;
 
+    }
+    100%{
+        color: black;
     }
 }
 .div-bulbula{
@@ -60,45 +63,38 @@ body{
     letter-spacing: 8px;
     margin-bottom: -12px;
     font-size: 70px;
-    animation: animation 2s 1 2s;
+    animation: animation 5s 1;
 }
 @keyframes animation {
     0%{
         color: black;
-        font-size: 100px;
-        letter-spacing: 16px;
-        margin-bottom: -30px;
     }
-    /*75%{*/
-    /*    color:black;*/
-
-    /*}*/
+    50%{
+        color: black;
+    }
    100%{
-       font-size: 60px;
-       letter-spacing: 8px;
-       margin-bottom: -10px;
+       color: #e66d42;
+
    }
 }
 .name{
     color: white;
-    animation: name 3s ease-in-out 2s;
+    animation: name 5s ease-in-out;
     font-family: Montserrat;
     font-size: 80px;
     margin-top: -15px ;
     letter-spacing: 8px;
 }
 @keyframes name {
-    /*    0%{
-    /*        color: black;*/
-    /*        font-size: 90px;*/
-    /*        letter-spacing: 9px;*/
-    /*    }*/
+
     0%{
-        /*font-size: 70px;*/
-        /*color: white;*/
-                color: black;
-                /*margin-bottom: -30px;*/
-                letter-spacing: 8px;
+         color: black;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: white;
     }
 }
 header{
@@ -136,6 +132,7 @@ a:hover{
 header:hover{
     background: rgba(0,0,0,0.2);
 }
+
 .two{
     display: flex;
     flex-direction: column;
