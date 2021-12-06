@@ -322,19 +322,26 @@ span:nth-child(8){
     display: flex;
     flex-direction: column;
 }
-.img-project-1{
-    width:80%;
-    margin:  -7% 0 5% 10%;
-    border-radius: 40px;
-    transition: border-radius 1s;
-}
-.img-project-1:hover,.img-project-2:hover,.img-project-3:hover{
-    border-radius: 0;
-}
 .project-1{
     display: flex;
     flex-direction: row;
 }
+.img-project-1{
+    width:80%;
+    margin:  -7% 0 5% 10%;
+    border-radius: 40px;
+    transition: border-radius 1s,box-shadow 2s;
+    box-shadow: 0 0 20px white;
+}
+.img-project-2:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 70px #e66d42;
+}
+.img-project-1:hover,.img-project-3:hover{
+    border-radius: 20px;
+    box-shadow: 0 0 70px white;
+}
+
 .text-project-1{
     color: white;
     font-size: 2rem;
@@ -347,7 +354,8 @@ span:nth-child(8){
     width: 60%;
     margin:  7% 0 5% 3%;
     border-radius: 40px;
-    transition: border-radius 1s;
+    transition: border-radius 1s,box-shadow 2s;
+    box-shadow: 0 0 20px #e66d42;
 }
 .text-project-2{
     color: white;
@@ -369,7 +377,8 @@ span:nth-child(8){
     width: 80%;
     margin:  5% 0 5% 8%;
     border-radius: 40px;
-    transition: border-radius 1s;
+    transition: border-radius 1s,box-shadow 2s;
+    box-shadow: 0 0 20px white;
 }
 svg{
     height: 50vh;
@@ -380,14 +389,13 @@ svg text{
     font-size: 245px;
     font-weight: 500;
     stroke-width: 5;
-    transform: translate(40px,140px);
+    transform: translate(40px,145px);
     font-family: Montserrat;
     animation: text 3s infinite;
 }
 @keyframes text{
     0%{
         stroke-dasharray: 0 50%;
-        text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42, 0 0 25px #e66d42,;
     }
 
     50%{
@@ -396,7 +404,6 @@ svg text{
     }
     100%{
         stroke-dasharray: 0 50%;
-        text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42, 0 0 25px #e66d42,;
     }
 }
 
