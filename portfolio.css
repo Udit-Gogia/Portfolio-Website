@@ -414,15 +414,43 @@ svg text{
         stroke-dasharray: 0 50%;
     }
 }
-.five{
+.pre-five{
     display: flex;
-    padding-top: 10vw;
-    /*background: #e66d42;*/
-    border-top: 2px solid white;
-    margin-top: 10vw;
-    position: absolute;
-    width:100vw;
-    z-index: 2;
+    flex-direction: column;
+}
+.five {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10vh;
+}
+#div-email,#div-github{
+    padding: 0 2% 0 5%;
+    transition: transform 1s;
+}
+#div-insta,#div-linkedin{
+    padding: 0 2% 0 10%;
+    transition: transform 1s;
+}
+#div-email:hover,#div-linkedin:hover,#div-github:hover,#div-insta:hover{
+    transform: scale(1.2);
+}
+.contactme{
+    flex: auto;
+}
+.text-contact{
+    color: #e66d42;
+    font-size: 10rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    padding-left: 5%;
+}
+.text-contact-me{
+    color: white;
+    font-size: 10rem;
+    font-family: Montserrat;
+    font-weight: 700;
+    padding-left: 2%;
 }
 
 
