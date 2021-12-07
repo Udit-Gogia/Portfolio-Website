@@ -3,6 +3,9 @@ body{
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar{
+    color: black;
+}
 .top-right{
     height: 250px;
     width: 250px;
@@ -13,7 +16,7 @@ body{
 .hello{
     width: 28%;
     padding-left: 2%;
-    animation: light 1.5s ease-in-out infinite alternate 4s;
+    animation: light 1.5s ease-in-out infinite alternate 3.5s;
 }
 @keyframes light {
     from{
@@ -30,7 +33,7 @@ body{
 .hello-text{
     font-size: 25em;
     font-family: Montserrat;
-    animation: gayab 4s ease-in-out ;
+    animation: gayab 2s ease-in-out ;
     margin-top: 7%;
     letter-spacing: 20px;
 }
@@ -63,7 +66,7 @@ body{
     letter-spacing: 8px;
     margin-bottom: -12px;
     font-size: 70px;
-    animation: animation 5s 1;
+    animation: animation 3s 1;
 }
 @keyframes animation {
     0%{
@@ -79,7 +82,7 @@ body{
 }
 .name{
     color: white;
-    animation: name 5s ease-in-out;
+    animation: name 3s ease-in-out;
     font-family: Montserrat;
     font-size: 80px;
     margin-top: -15px ;
@@ -109,7 +112,7 @@ header{
 
 nav{
     padding: 20px 2%  20px 2%;
-   width: 100vw;
+    width: 100vw;
     display: flex;
     justify-content: space-evenly;
     font-size: 18px;
@@ -120,13 +123,14 @@ nav>a{
     text-decoration: none;
     color: white;
     font-family: Montserrat;
+    font-weight: 900;
+    letter-spacing: 2px;
     background-color: black;
     padding: 5px;
     transition: transform 400ms ease-in-out;
 }
 a:hover{
-    color: #e66d42;
-    transform: translateY(-20%);
+    text-shadow: 0 5px #e66d42;
 }
 
 header:hover{
@@ -209,33 +213,37 @@ header:hover{
     color: #e66d42;
     font-family: Montserrat;
     font-size: 9rem;
-    padding-left: 3%;
+    padding-left: 1%;
     font-weight: 700;
     height: 5%;
     animation: skills 8s ease-in-out infinite 3s;
 }
 span:nth-child(1){
-    animation-delay: 1s;
+    animation-delay: 0.5s;
+    padding-left: 3%;
 }
 span:nth-child(2){
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 span:nth-child(3){
-    animation-delay: 3s;
+    animation-delay: 1.5s;
+    padding-left: 4%;
 }
 span:nth-child(4){
-    animation-delay: 4s;
+    animation-delay: 2s;
 }
 span:nth-child(5){
-    animation-delay: 5s;
-}span:nth-child(6){
-     animation-delay: 6s;
- }
+    animation-delay: 2.5s;
+}
+span:nth-child(6){
+     animation-delay: 3s;
+
+}
 span:nth-child(7){
-    animation-delay: 7s;
+    animation-delay: 3.5s;
 }
 span:nth-child(8){
-    animation-delay: 8s;
+    animation-delay: 4s;
 }
 
 
@@ -406,4 +414,18 @@ svg text{
         stroke-dasharray: 0 50%;
     }
 }
+.five{
+    display: flex;
+    padding-top: 10vw;
+    /*background: #e66d42;*/
+    border-top: 2px solid white;
+    margin-top: 10vw;
+    position: absolute;
+    width:100vw;
+    z-index: 2;
+}
+
+
+
+
 
