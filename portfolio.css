@@ -311,10 +311,7 @@ span:nth-child(8){
     float: right;
     padding-left: 60%;
 }
-.four{
-    display: flex;
-    flex-direction: column;
-}
+
 .text-project{
     color: #e66d42;
     margin-top: 10%;
@@ -329,8 +326,6 @@ span:nth-child(8){
     0% {
         color: #e66d42;
     }
-
-
     50%{
         letter-spacing: 2rem;
         color: white;
@@ -346,86 +341,20 @@ span:nth-child(8){
     }
 }
 .four{
+    margin-top: -120px;
+}
+.container{
     display: flex;
-    flex-direction: column;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
 }
-.project-1{
+.project1,.project2,.project3{
     display: flex;
-    flex-direction: row;
-}
-.img-project-1{
-    width:80%;
-    margin:  -7% 0 5% 10%;
-    border-radius: 40px;
-    transition: border-radius 1s,box-shadow 2s;
-    box-shadow: 0 0 20px white;
-}
-.img-project-2:hover{
-    border-radius: 20px;
-    box-shadow: 0 0 70px #e66d42;
-}
-.img-project-1:hover,.img-project-3:hover{
-    border-radius: 20px;
-    box-shadow: 0 0 70px white;
-}
-
-.text-project-1{
-    color: white;
-    font-size: 2.2rem;
-    font-family: Montserrat;
-    text-align: center;
-    padding-right: 20%;
-    margin-top: 15%;
-    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: text-animate 50s linear infinite;
-    transform: translate3d(0,0,0);
-    backface-visibility: hidden;
-}
-@keyframes text-animate {
-    0%{
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-.img-project-2{
-    width: 60%;
-    margin:  7% 0 5% 3%;
-    border-radius: 40px;
-    transition: border-radius 1s,box-shadow 2s;
-    box-shadow: 0 0 20px #e66d42;
-}
-.text-project-2{
-    color: white;
-    font-size: 2rem;
-    font-family: Montserrat;
-    text-align: center;
-    padding-left: 5%;
-    padding-top: 52%;
-    background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: text-animate 50s linear infinite;
-    transform: translate3d(0,0,0);
-    backface-visibility: hidden;
-
-}
-.text-project-3{
-    color: white;
-    font-size: 2rem;
-    font-family: Montserrat;
-    text-align: center;
-    padding-right: 20%;
-}
-.img-project-3{
-    width: 80%;
-    margin:  5% 0 5% 8%;
-    border-radius: 40px;
-    transition: border-radius 1s,box-shadow 2s;
-    box-shadow: 0 0 20px white;
+    scroll-snap-align: start;
+    flex: none;
+    width: 100vw;
+    height: 65vh;
+    padding: 0 0 1% 5%;
 }
 svg{
     height: 50vh;
@@ -453,6 +382,10 @@ svg text{
         stroke-dasharray: 0 50%;
     }
 }
+
+
+
+
 /*.pre-five{*/
 /*    display: flex;*/
 /*    flex-direction: column;*/
