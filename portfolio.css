@@ -382,7 +382,19 @@ svg text{
         stroke-dasharray: 0 50%;
     }
 }
-
+.div-text-rrbt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px;
+    margin: 0;
+}
+.text-rrbt{
+    color: white;
+    font-family: Montserrat;
+    font-size: 1.5rem;
+    text-align: center;
+}
 
 
 
