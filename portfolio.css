@@ -174,7 +174,7 @@ header:hover{
 .about-img{
     width:40%;
     float: right;
-    margin-top: -5%;
+    /*margin-top: -5%;*/
 }
 
 .text-me{
@@ -202,7 +202,10 @@ header:hover{
                 0 0 160px #e66d42;
     }
 }
-
+.udit{
+    display: flex;
+    justify-content: space-around;
+}
 .text-udit {
     color: white;
     font-family: Ubuntu;
@@ -439,6 +442,43 @@ svg text{
 }
 .proj{
     border-radius: 30px;
+}
+@media screen and (min-width: 440px) and (max-width: 1200px) {
+    .top-right{
+        height:0;
+    }
+    .div-text{
+        position: absolute;
+        top: 40vh;
+        left: 20vw;
+    }
+    .About{
+        justify-content: center;
+    }
+    #aboutimg{
+        height: 42vh;
+        width: 42vw;
+    }
+    .four{
+        margin-top: -180px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        scroll-snap-type: none;
+    }
+    .proj{
+        height: 50vh;
+        width: 75vw;
+        padding-left: 10px;
+    }
+    .div-text-rrbt{
+        padding: 0;
+    }
+    .text-udit{
+        font-size: 2.3vw;
+    }
+
 }
 
 
