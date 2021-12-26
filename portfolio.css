@@ -354,7 +354,8 @@ span:nth-child(8){
     flex: none;
     width: 100vw;
     height: 65vh;
-    padding: 0 0 1% 5%;
+    padding-bottom: 1%;
+    justify-content: space-evenly;
 }
 svg{
     height: 50vh;
@@ -408,26 +409,23 @@ svg text{
 /*    !*align-items: flex-start;*!*/
 /*    padding-top: 10vh;*/
 /*}*/
-/*.five-one{*/
-/*    margin: 0;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    align-items: flex-start;*/
-/*}*/
+.five-one{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 /*.five-two{*/
 /*    margin: 0;*/
 /*}*/
-/*#div-email,#div-github{*/
-/*    padding: 0 2% 0 5%;*/
-/*    transition: transform 1s;*/
-/*}*/
-/*#div-insta,#div-linkedin{*/
-/*    padding: 0 2% 0 10%;*/
-/*    transition: transform 1s;*/
-/*}*/
-/*#div-email:hover,#div-linkedin:hover,#div-github:hover,#div-insta:hover{*/
-/*    transform: scale(1.2);*/
-/*}*/
+#div-email,#div-github,#div-insta,#div-linkedin{
+    /*padding: 0 2% 0 5%;*/
+    transition: transform 500ms;
+}
+#div-email:hover,#div-linkedin:hover,#div-github:hover,#div-insta:hover{
+    transform: scale(1.2);
+}
 /*.contactme{*/
 /*    flex: auto;*/
 /*}*/
