@@ -449,18 +449,18 @@ svg text{
     }
     .div-text{
         position: absolute;
-        top: 40vh;
+        top: 20vh;
         left: 20vw;
     }
     .About{
         justify-content: center;
     }
     #aboutimg{
-        height: 42vh;
+        height: 30vh;
         width: 42vw;
     }
     .four{
-        margin-top: -180px;
+        margin-top: -250px;
     }
     .container{
         display: flex;
@@ -468,7 +468,6 @@ svg text{
         scroll-snap-type: none;
     }
     .proj{
-        height: 50vh;
         width: 75vw;
         padding-left: 10px;
     }
