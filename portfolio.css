@@ -279,6 +279,20 @@ span:nth-child(8){
     display: flex;
     justify-content: center;
     margin: 0;
+
+}
+#img-css{
+    margin-left: -38px
+}
+#css{
+    justify-content: start;
+}
+#js,#html{
+    color: white;
+}
+#c{
+    margin-left: -3px;
+    color: white;
 }
 .skill-img{
     width: 10vw;
@@ -425,6 +439,16 @@ svg text{
 }
 #div-email:hover,#div-linkedin:hover,#div-github:hover,#div-insta:hover{
     transform: scale(1.2);
+}
+.copyright{
+    background-color: #232222;
+}
+
+.text-cc{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0;
 }
 /*.contactme{*/
 /*    flex: auto;*/
