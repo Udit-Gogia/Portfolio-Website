@@ -460,7 +460,7 @@ svg text{
         width: 42vw;
     }
     .four{
-        margin-top: -270px;
+        margin-top: -280px;
     }
     .container{
         display: flex;
@@ -468,9 +468,16 @@ svg text{
         scroll-snap-type: none;
     }
     .proj{
-        height: 40vw;
+        margin-bottom: 5%;
         width: 70vw;
         padding-left: 10px;
+    }
+    .project2{
+        flex-direction: row-reverse;
+    }
+    .project1,.project2,.project3{
+        height: inherit;
+        align-items: center;
     }
     .div-text-rrbt{
         padding: 0;
@@ -481,9 +488,10 @@ svg text{
     .skill{
         margin: 20px;
     }
-    svg text{
-        font-size: 300px;
+    svg{
+        height: 40vh;
     }
+
 }
 
 
