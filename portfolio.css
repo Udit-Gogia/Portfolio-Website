@@ -284,17 +284,11 @@ span:nth-child(8){
     margin: 0;
 
 }
-#img-css{
-    margin-left: -38px
-}
-#css{
-    justify-content: start;
-}
+
 #js,#html{
     color: white;
 }
-#c{
-    margin-left: -3px;
+#cpp{
     color: white;
 }
 .skill-img{
@@ -415,7 +409,7 @@ svg text{
 }
 
 .five-one{
-    margin: 0;
+    margin-top: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -478,6 +472,9 @@ svg text{
     .project1,.project2,.project3{
         height: inherit;
         align-items: center;
+    }
+    .skill-js{
+        flex-direction: row;
     }
     .div-text-rrbt{
         padding: 0;
