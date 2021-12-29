@@ -519,6 +519,10 @@ svg text{
     .social{
         width: 15vw;
     }
+    .nav{
+        position: relative;
+        top: -45px;
+    }
 }
 
 
