@@ -438,6 +438,10 @@ svg text{
     border-radius: 30px;
 }
 @media screen and (min-width: 440px) and (max-width: 1200px) {
+    .one{
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
     .top-right{
         height:0;
     }
@@ -450,8 +454,7 @@ svg text{
         justify-content: center;
     }
     #aboutimg{
-        height: 30vh;
-        width: 42vw;
+        width: 80vw;
     }
     .four{
         margin-top: -280px;
@@ -488,7 +491,34 @@ svg text{
     svg{
         height: 40vh;
     }
-
+    .udit{
+        flex-direction: column;
+    }
+    .text-udit{
+        font-size: 50px;
+        line-height: 7vw;
+        width: 85vw;
+        margin: 0 0 1% 6%;
+    }
+    .about-img{
+        margin: 0 auto;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .skill-img{
+        width: 15vw;
+    }
+    .skill-js{
+        flex-direction: row;
+        align-items: center;
+    }
+    .skills-one{
+        padding-bottom: 85px;
+    }
+    .social{
+        width: 15vw;
+    }
 }
 
 
