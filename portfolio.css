@@ -372,12 +372,16 @@ span:nth-child(8){
     height: 65vh;
     padding-bottom: 1%;
     justify-content: space-evenly;
-    animation: move 35s infinite;
+
 }
 /*.ani-move:hover + .ani-move{*/
 /*    animation-play-state: paused;*/
 /*}*/
-
+@media screen and (min-width: 1300px){
+    .project1,.project2,.project3{
+        animation: move 35s infinite;
+    }
+}
 @keyframes move {
 
     0%{
@@ -504,7 +508,7 @@ svg text{
     .project1,.project2,.project3{
         height: inherit;
         align-items: center;
-
+        animation: none;
     }
     .skill-js{
         flex-direction: row;
@@ -551,7 +555,7 @@ svg text{
     }
     .nav{
         position: relative;
-        top: -45px;
+        top: -50px;
     }
 }
 
