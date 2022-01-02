@@ -194,7 +194,7 @@
 
                 </section>
 
-                <section class="project2 ani-move">
+                <section class="project2 ani-move" onclick="proj2link()">
 
                     <img src="project%202.jpg" alt="rpss" class="proj">
 
@@ -208,7 +208,7 @@
 
                 </section>
 
-                <section class="project3 ani-move">
+                <section class="project3 ani-move" onclick="proj3link()">
                     <img src="project%203.jpg" alt="ampv" class="proj">
                     <div class="div-text-rrbt">
                         <a href="https://udit-gogia.github.io/PRIME_VIDEO-CLONE/" id="link-ampv">
@@ -221,6 +221,22 @@
 
                         navigator.clipboard.writeText("https://github.com/Udit-Gogia/WEB-DEV-PROJECT-RRBT");
                         swal("Rolls Royce Boat tail's Github Link copied!",{
+                            button: "Cool!",
+                            timer:3000,
+                        });
+                    }
+
+                    function proj2link(){
+                        navigator.clipboard.writeText("https://github.com/Udit-Gogia/Rock-Paper-Scissor");
+                        swal("Rock Paper Scissor's Github Link copied!",{
+                            button: "Cool!",
+                            timer:3000,
+                        });
+                    }
+
+                    function proj3link(){
+                        navigator.clipboard.writeText("https://github.com/Udit-Gogia/PRIME_VIDEO-CLONE");
+                        swal("Prime Video's Github Link copied!",{
                             button: "Cool!",
                             timer:3000,
                         });

@@ -395,7 +395,7 @@ span:nth-child(8){
 /*}*/
 @media screen and (min-width: 1300px){
     .ani-move{
-        /*animation: move 50s infinite;*/
+        animation: move 50s infinite;
     }
 }
 
@@ -407,6 +407,7 @@ span:nth-child(8){
     25%{
         transform: translateX(-100%);
     }
+
     50%{
         transform: translateX(-200%);
     }
