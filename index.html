@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
 <header>
@@ -182,21 +183,29 @@
 <div class="four">
 
             <div class="container">
-                <section class="project1 ani-move">
-                    <img src="project%201.jpg" alt="rrbt" class="proj">
+                <section class="project1 ani-move" onclick="proj1link()">
+
+                    <img src="project%201.jpg" alt="rrbt" class="proj" >
+
                         <div class="div-text-rrbt">
                             <a href="https://udit-gogia.github.io/WEB-DEV-PROJECT-RRBT/" id="link-rrbt">
-                            <p class="text-rrbt">ROLLS ROYCE BOATTAIL<br>INFORMATIVE WEBPAGE</p></a>
-                        </div>
+                            <p class="text-rrbt">ROLLS ROYCE BOAT TAIL<br>INFORMATIVE WEBPAGE</p></a>
+                    </div>
+
                 </section>
 
                 <section class="project2 ani-move">
 
                     <img src="project%202.jpg" alt="rpss" class="proj">
-                    <div class="div-text-rrbt">
-                        <a href="https://udit-gogia.github.io/Rock-Paper-Scissor/" id="link-rpss">
-                        <p class="text-rrbt">ROCK PAPER SCISSOR</p></a>
-                    </div>
+
+
+                        <div class="div-text-rrbt">
+                            <a href="https://udit-gogia.github.io/Rock-Paper-Scissor/" id="link-rpss">
+                            <p class="text-rrbt">ROCK PAPER SCISSOR</p></a>
+                        </div>
+
+
+
                 </section>
 
                 <section class="project3 ani-move">
@@ -206,6 +215,18 @@
                         <p class="text-rrbt">AMAZON PRIME VIDEO<br>CLONE WEBSITE</p></a>
                     </div>
                 </section>
+
+                <script>
+                    function proj1link() {
+
+                        navigator.clipboard.writeText("https://github.com/Udit-Gogia/WEB-DEV-PROJECT-RRBT");
+                        swal("Rolls Royce Boat tail's Github Link copied!",{
+                            button: "Cool!",
+                            timer:3000,
+                        });
+                    }
+
+                </script>
             </div>
 </div>
 
@@ -216,25 +237,25 @@
 
     <div class="five-one">
             <div id="div-email">
-                <a href="https://mail.google.com/mail/u/0/?fs=1&to=gogiaudit17@gmail.com&tf=cm">
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=gogiaudit17@gmail.com&tf=cm" target="_blank">
                 <img src="email.svg" class="email social" alt="social"></a>
             </div>
 
         <div id="div-insta">
-            <a href="https://www.instagram.com/udit_gogia/?utm_medium=copy_link">
+            <a href="https://www.instagram.com/udit_gogia/?utm_medium=copy_link" target="_blank">
                 <img class="insta social" src="instaw.svg" alt="social">
             </a>
         </div>
 
 
             <div id="div-github">
-                <a href="https://github.com/Udit-Gogia">
-                    <img class="github social" src="github.svg" alt="social">
+                <a href="https://github.com/Udit-Gogia" target="_blank">
+                    <img class="github social" src="github.svg" alt="social" >
                 </a>
             </div>
 
             <div id="div-linkedin">
-                <a href="https://www.linkedin.com/in/udit-gogia-6351151bb/">
+                <a href="https://www.linkedin.com/in/udit-gogia-6351151bb/" target="_blank">
                     <img class="linkedin social" src="linkedin.svg" alt="social">
                 </a>
             </div>

@@ -375,6 +375,10 @@ span:nth-child(8){
     overflow-x: hidden;
 
 }
+.proj{
+    border-radius: 30px;
+
+}
 
 .project1,.project2,.project3{
     display: flex;
@@ -384,16 +388,17 @@ span:nth-child(8){
     height: 65vh;
     padding-bottom: 1%;
     justify-content: space-evenly;
-
 }
+
 /*.ani-move:hover + .ani-move{*/
 /*    animation-play-state: paused;*/
 /*}*/
 @media screen and (min-width: 1300px){
-    .project1,.project2,.project3{
-        animation: move 35s infinite;
+    .ani-move{
+        /*animation: move 50s infinite;*/
     }
 }
+
 @keyframes move {
 
     0%{
@@ -413,6 +418,16 @@ span:nth-child(8){
     }
 
 }
+
+/*.ani-move:hover+.project1+{*/
+/*    animation-play-state: paused;*/
+/*}*/
+/*.project2:hover+.ani-move{*/
+/*    animation-play-state: paused;*/
+/*}*/
+/*.project3:hover+.ani-move{*/
+/*    animation-play-state: paused;*/
+/*}*/
 svg{
     height: 50vh;
     width: 50vw;
@@ -479,8 +494,21 @@ svg text{
 #link-ampv,#link-rrbt,#link-rpss{
     text-decoration: none;
 }
-.proj{
-    border-radius: 30px;
+.swal-modal{
+    background-image: url("swalbg.gif");
+    width:300px;
+    height: 150px;
+    padding: 10px;
+}
+.swal-text{
+    color: black;
+    font-family: Ubuntu;
+    font-weight: 500;
+    margin: 0;
+}
+.swal-button{
+    background-color: #e66d42;
+
 }
 @media screen and (min-width: 440px) and (max-width: 1200px) {
     .one{
@@ -514,6 +542,7 @@ svg text{
         width: 70vw;
         padding-left: 10px;
     }
+
     .project2{
         flex-direction: row-reverse;
     }
