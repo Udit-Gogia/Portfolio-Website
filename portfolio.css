@@ -9,6 +9,7 @@ html{
 ::-webkit-scrollbar{
     width: 1.2rem;
 }
+
 ::-webkit-scrollbar-track{
     background: black;
 
@@ -126,27 +127,35 @@ header{
 }
 
 nav{
-    padding: 20px 2%  20px 2%;
+    padding: 20px 0;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
     font-size: 18px;
     background-color: black;
 }
-
 nav>a{
     text-decoration: none;
     color: white;
     font-family: Montserrat;
     font-weight: 900;
     letter-spacing: 2px;
-    background-color: black;
     padding: 5px;
     transition: transform 400ms ease-in-out;
 }
+.projects{
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat;
+    font-weight: 900;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+
 a:hover{
     text-shadow: 0 3px 0 #e66d42;
 }
+
 
 header:hover{
     background: rgba(0,0,0,0.2);
@@ -509,8 +518,11 @@ svg text{
 }
 .swal-button{
     background-color: #e66d42;
-
 }
+.swal-overlay{
+    background: rgba(0,0,0,0.7);
+}
+
 @media screen and (min-width: 440px) and (max-width: 1200px) {
     .one{
         margin-top: 50px;
