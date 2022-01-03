@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Udit Gogia ~ Aspiring Full Stack Developer</title>
-    <script src="styling.js"></script>
+
     <link rel="stylesheet" href="portfolio.css">
     <link rel="icon" href="favicon-32x32.png">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="styling.js"></script>
+
 </head>
 <body>
 <header>
@@ -220,51 +222,8 @@
                     </div>
                 </section>
 
+
                 <script>
-
-                    window.onscroll = function(){navbar()};
-
-                    function navbar(){
-                        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-
-                            document.getElementById('nav1').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav1').style.color = "#e66d42";
-                            document.getElementById('nav1').style.fontSize = "14px";
-
-                            document.getElementById('nav2').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav2').style.color = "#e66d42";
-                            document.getElementById('nav2').style.fontSize = "14px";
-
-                            document.getElementById('nav3').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav3').style.color = "#e66d42";
-                            document.getElementById('nav3').style.fontSize = "14px";
-
-                            document.getElementById('nav4').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav4').style.color = "#e66d42";
-                            document.getElementById('nav4').style.fontSize = "14px";
-
-                        }
-                        else{
-                            document.getElementById('nav1').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav1').style.color = "white";
-                            document.getElementById('nav1').style.fontSize = "18px";
-
-                            document.getElementById('nav2').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav2').style.color = "white";
-                            document.getElementById('nav2').style.fontSize = "18px";
-
-                            document.getElementById('nav3').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav3').style.color = "white";
-                            document.getElementById('nav3').style.fontSize = "18px";
-
-                            document.getElementById('nav4').style.transition = "color 1s, font-size 1s";
-                            document.getElementById('nav4').style.color = "white";
-                            document.getElementById('nav4').style.fontSize = "18px";
-
-                        }
-                    }
-
-
                     function proj1link() {
 
                         navigator.clipboard.writeText("https://github.com/Udit-Gogia/WEB-DEV-PROJECT-RRBT");
