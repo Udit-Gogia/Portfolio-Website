@@ -9,10 +9,8 @@ html{
 ::-webkit-scrollbar{
     width: 1.2rem;
 }
-
 ::-webkit-scrollbar-track{
     background: black;
-
 }
 ::-webkit-scrollbar-thumb{
     background: #e66d42;
@@ -104,6 +102,7 @@ html{
     margin-top: -15px ;
     letter-spacing: 8px;
 }
+
 @keyframes name {
 
     0%{
@@ -124,6 +123,7 @@ header{
     font-family: Montserrat;
     margin-top: 15%;
     font-size: 35px;
+    transition: cursor 500ms;
 }
 
 nav{
@@ -133,6 +133,7 @@ nav{
     justify-content: space-evenly;
     font-size: 18px;
     background-color: black;
+    cursor: url("nav.png"), auto;
 }
 nav>a{
     text-decoration: none;
@@ -143,6 +144,23 @@ nav>a{
     padding: 5px;
     transition: transform 400ms ease-in-out;
 }
+.about-me:hover,.two:hover{
+    cursor: url("user.png"), auto;
+}
+.home:hover,.one:hover{
+
+    cursor: url("home.png"), auto;
+}
+.projects:hover{
+    cursor: url("projects.png"), auto;
+}
+.contact:hover,.five:hover{
+    cursor: url("contact.png"), auto;
+}
+.container{
+    cursor: url("github.png"), auto;
+}
+
 .projects{
     text-decoration: none;
     color: white;
@@ -151,8 +169,7 @@ nav>a{
     letter-spacing: 2px;
     padding: 5px;
 }
-
-a:hover{
+#nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover{
     text-shadow: 0 3px 0 #e66d42;
 }
 
@@ -245,6 +262,9 @@ header:hover{
 .three{
     display: flex;
     flex-direction: column;
+}
+.three:hover{
+    cursor: url("skills.png"), auto;
 }
 .skills-text {
     color: #e66d42;
@@ -479,7 +499,7 @@ svg text{
 }
 
 .five-one{
-    margin-top: 5vw;
+    padding-top: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
