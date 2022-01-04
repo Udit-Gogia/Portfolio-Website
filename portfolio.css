@@ -24,10 +24,11 @@ html{
     height: 250px;
     width: 250px;
 }
+
 .one{
     display: flex;
 }
-.hello{
+#hey{
     width: 28%;
     padding-left: 2%;
     animation: light 1.5s ease-in-out infinite alternate 3.5s;
@@ -42,14 +43,47 @@ html{
         color: white;
         text-shadow: 0 0 5px #e66d42, 0 0 20px #e66d42 , 0 0 25px #e66d42 , 0 0 40px #e66d42, 0 0 50px #e66d42 , 0 0 60px #e66d42;
     }
-
+}
+@keyframes green-light{
+    from{
+        color: #fff;
+        text-shadow: 0 0 5px #30E3CA, 0 0 10px #30E3CA, 0 0 15px #30E3CA , 0 0 20px #30E3CA,
+        0 0 25px #30E3CA, 0 0 30px #30E3CA , 0 0 35px #30E3CA;
+    }
+    to{
+        color: white;
+        text-shadow: 0 0 5px #30E3CA, 0 0 20px #30E3CA , 0 0 25px #30E3CA , 0 0 40px #30E3CA, 0 0 50px #30E3CA , 0 0 60px #30E3CA;
+    }
+}
+@keyframes blue-light{
+    from{
+        color: #fff;
+        text-shadow: 0 0 5px #82ACFF, 0 0 10px #82ACFF, 0 0 15px #82ACFF, 0 0 20px #82ACFF,
+        0 0 25px #82ACFF, 0 0 30px #82ACFF, 0 0 35px #82ACFF;
+    }
+    to{
+        color: white;
+        text-shadow: 0 0 5px #82ACFF, 0 0 20px #82ACFF, 0 0 25px #82ACFF, 0 0 40px #82ACFF, 0 0 50px #82ACFF, 0 0 60px #82ACFF;
+    }
+}
+@keyframes purple-light{
+    from{
+        color: #fff;
+        text-shadow: 0 0 5px #892CDC, 0 0 10px #892CDC, 0 0 15px #892CDC, 0 0 20px #892CDC,
+        0 0 25px #892CDC, 0 0 30px #892CDC, 0 0 35px #892CDC;
+    }
+    to{
+        color: white;
+        text-shadow: 0 0 5px #892CDC, 0 0 20px #892CDC, 0 0 25px #892CDC, 0 0 40px #892CDC, 0 0 50px #892CDC, 0 0 60px #892CDC;
+    }
 }
 .hello-text{
     font-size: 25em;
     font-family: Montserrat;
-    animation: gayab 2s ease-in-out ;
+    /*animation: gayab 2s ease-in-out ;*/
     margin-top: 7%;
     letter-spacing: 20px;
+    color: white;
 }
 @keyframes gayab {
     0% {
@@ -135,6 +169,23 @@ nav{
     background-color: black;
     cursor: url("nav.png"), auto;
 }
+.purple,.blue,.green,.orange{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #892CDC;
+    border-width: 0;
+}
+.blue{
+    background-color: #82ACFF;
+}
+.green{
+    background-color: #30E3CA;
+}
+.orange {
+    background-color: #e66d42;
+}
 nav>a{
     text-decoration: none;
     color: white;
@@ -144,7 +195,7 @@ nav>a{
     padding: 5px;
     transition: transform 400ms ease-in-out;
 }
-.about-me:hover,.two:hover{
+.about-me:hover,.two:hover,.top-right:hover{
     cursor: url("user.png"), auto;
 }
 .home:hover,.one:hover{
@@ -189,9 +240,9 @@ header:hover{
     display: flex;
 }
 
-.text-about{
+#abouttext{
     font-family: Montserrat;
-    animation: about 15s ease-in-out infinite alternate;
+    animation: orng-about 15s ease-in-out infinite alternate;
     font-size: 9rem;
     padding-left: 4%;
     margin-top: 2%;
@@ -206,18 +257,18 @@ header:hover{
     /*margin-top: -5%;*/
 }
 
-.text-me{
+#metext{
     color: #e66d42;
     font-family: Montserrat;
     font-size: 9rem;
     padding-left: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
-    animation: about 20s ease-in-out infinite alternate;
+    animation: orng-about 20s ease-in-out infinite alternate;
     height: 5%;
     font-weight: 700;
 }
-@keyframes about {
+@keyframes orng-about {
    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
        color: #e66d42;
        text-shadow: none;
@@ -229,6 +280,48 @@ header:hover{
                 0 0 40px #e66d42,
                 0 0 80px #e66d42,
                 0 0 160px #e66d42;
+    }
+}
+@keyframes blue-about {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #82ACFF;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: white;
+        text-shadow: 0 0 10px #82ACFF,
+        0 0 20px #82ACFF,
+        0 0 40px #82ACFF,
+        0 0 80px #82ACFF,
+        0 0 160px #82ACFF;
+    }
+}
+@keyframes green-about {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #30E3CA;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: white;
+        text-shadow: 0 0 10px #30E3CA,
+        0 0 20px #30E3CA,
+        0 0 40px #30E3CA,
+        0 0 80px #30E3CA,
+        0 0 160px #30E3CA;
+    }
+}
+@keyframes purple-about {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+        color: #892CDC;
+        text-shadow: none;
+    }
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
+        color: white;
+        text-shadow: 0 0 10px #892CDC,
+        0 0 20px #892CDC,
+        0 0 40px #892CDC,
+        0 0 80px #892CDC,
+        0 0 160px #892CDC;
     }
 }
 .udit{
