@@ -13,7 +13,7 @@ html{
     background: black;
 }
 ::-webkit-scrollbar-thumb{
-    background: #e66d42;
+    background-color: white;
     border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover{
@@ -54,6 +54,7 @@ html{
         color: white;
         text-shadow: 0 0 5px #30E3CA, 0 0 20px #30E3CA , 0 0 25px #30E3CA , 0 0 40px #30E3CA, 0 0 50px #30E3CA , 0 0 60px #30E3CA;
     }
+
 }
 @keyframes blue-light{
     from{
@@ -80,10 +81,9 @@ html{
 .hello-text{
     font-size: 25em;
     font-family: Montserrat;
-    /*animation: gayab 2s ease-in-out ;*/
+    animation: gayab 2s ease-in-out ;
     margin-top: 7%;
     letter-spacing: 20px;
-    color: white;
 }
 @keyframes gayab {
     0% {
@@ -359,45 +359,55 @@ header:hover{
 .three:hover{
     cursor: url("skills.png"), auto;
 }
-.skills-text {
-    color: #e66d42;
+skill{
     font-family: Montserrat;
+    color: #e66d42;
     font-size: 9rem;
     padding-left: 1%;
     font-weight: 700;
     height: 5%;
-    animation: skills 8s ease-in-out infinite 3s;
+    animation: orng-skills 8s ease-in-out infinite 3s;
 }
-span:nth-child(1){
+skill:nth-child(1){
     animation-delay: 0.5s;
     padding-left: 3%;
 }
-span:nth-child(2){
+skill:nth-child(2){
     animation-delay: 1s;
 }
-span:nth-child(3){
+skill:nth-child(3){
     animation-delay: 1.5s;
     padding-left: 4%;
 }
-span:nth-child(4){
+skill:nth-child(4){
     animation-delay: 2s;
 }
-span:nth-child(5){
+skill:nth-child(5){
     animation-delay: 2.5s;
 }
-span:nth-child(6){
+skill:nth-child(6){
      animation-delay: 3s;
 
 }
-span:nth-child(7){
+skill:nth-child(7){
     animation-delay: 3.5s;
 }
-span:nth-child(8){
+skill:nth-child(8){
     animation-delay: 4s;
 }
 
 
-@keyframes skills {
+@keyframes green-skills {
+    0%,10%,20%,30%,40%,50%,60%,70%{
+        color: white;
+        text-shadow: 1px 1px 20px #ffffff;
+    }
+    5%,15%,25%,35%,45%,55%,66%,75%,100%{
+        color: #30E3CA;
+        text-shadow: 1px 1px 20px #30E3CA;
+    }
+}
+@keyframes orng-skills {
     0%,10%,20%,30%,40%,50%,60%,70%{
         color: white;
         text-shadow: 1px 1px 20px #ffffff;
@@ -405,6 +415,26 @@ span:nth-child(8){
     5%,15%,25%,35%,45%,55%,66%,75%,100%{
         color: #e66d42;
         text-shadow: 1px 1px 20px #e66d42;
+    }
+}
+@keyframes blue-skills {
+    0%,10%,20%,30%,40%,50%,60%,70%{
+        color: white;
+        text-shadow: 1px 1px 20px #ffffff;
+    }
+    5%,15%,25%,35%,45%,55%,66%,75%,100%{
+        color: #82ACFF;
+        text-shadow: 1px 1px 20px #82ACFF;
+    }
+}
+@keyframes purple-skills {
+    0%,10%,20%,30%,40%,50%,60%,70%{
+        color: white;
+        text-shadow: 1px 1px 20px #ffffff;
+    }
+    5%,15%,25%,35%,45%,55%,66%,75%,100%{
+        color: #892CDC;
+        text-shadow: 1px 1px 20px #892CDC;
     }
 }
 .skills-name{
@@ -562,9 +592,9 @@ svg text{
     stroke-width: 5;
     transform: translate(40px,145px);
     font-family: Montserrat;
-    animation: text 3s infinite;
+    animation: orng-text 3s infinite;
 }
-@keyframes text{
+@keyframes orng-text{
     0%{
         stroke-dasharray: 0 50%;
     }
@@ -572,6 +602,45 @@ svg text{
     50%{
         stroke-dasharray: 100% 0;
         text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42 , 0 0 25px #e66d42;
+    }
+    100%{
+        stroke-dasharray: 0 50%;
+    }
+}
+@keyframes purple-text{
+    0%{
+        stroke-dasharray: 0 50%;
+    }
+
+    50%{
+        stroke-dasharray: 100% 0;
+        text-shadow: 0 0 5px #892CDC, 0 0 15px #892CDC , 0 0 25px #892CDC;
+    }
+    100%{
+        stroke-dasharray: 0 50%;
+    }
+}
+@keyframes blue-text{
+    0%{
+        stroke-dasharray: 0 50%;
+    }
+
+    50%{
+        stroke-dasharray: 100% 0;
+        text-shadow: 0 0 5px #82ACFF, 0 0 15px #82ACFF , 0 0 25px #82ACFF;
+    }
+    100%{
+        stroke-dasharray: 0 50%;
+    }
+}
+@keyframes green-text{
+    0%{
+        stroke-dasharray: 0 50%;
+    }
+
+    50%{
+        stroke-dasharray: 100% 0;
+        text-shadow: 0 0 5px #30E3CA, 0 0 15px #30E3CA , 0 0 25px #30E3CA;
     }
     100%{
         stroke-dasharray: 0 50%;

@@ -10,6 +10,13 @@ function applygreen(){
     document.getElementById('music-logo').src = "music-green.png";
     document.getElementById('car-logo').src = "car-green.png";
     document.getElementById('aboutimg').src = "about-green.svg";
+    document.getElementById('skill').style.color = "#30E3CA";
+    document.querySelector('skill').style.animation = "green-skills 8s ease-in-out infinite 3s";
+    document.getElementById('projecttext').style.fill = "#30E3CA";
+    document.getElementById('projecttext').style.animation = "green-text 3s infinite";
+    document.getElementById('icon-mail').src = "mail-green.svg";
+    document.getElementById('icon-insta').src = "insta-green.svg";
+    document.getElementById('icon-github').src = "github-green.svg";
     window.onscroll = function(){greennavbar()};
 }
 function applyblue(){
@@ -24,6 +31,13 @@ function applyblue(){
     document.getElementById('music-logo').src = "music-blue.png";
     document.getElementById('car-logo').src = "car-blue.png";
     document.getElementById('aboutimg').src = "about-blue.svg";
+    document.getElementById('skill').style.color = "#82ACFF";
+    document.querySelector('skill').style.animation = "blue-skills 8s ease-in-out infinite 3s";
+    document.getElementById('projecttext').style.fill = "#82ACFF";
+    document.getElementById('projecttext').style.animation = "blue-text 3s infinite";
+    document.getElementById('icon-mail').src = "mail-blue.svg";
+    document.getElementById('icon-insta').src = "insta-blue.svg";
+    document.getElementById('icon-github').src = "github-blue.svg";
     window.onscroll = function(){bluenavbar()};
 }
 function applypurple(){
@@ -38,6 +52,13 @@ function applypurple(){
     document.getElementById('music-logo').src = "music-purple.png";
     document.getElementById('car-logo').src = "car-purple.png";
     document.getElementById('aboutimg').src = "about-purple.svg";
+    document.getElementById('skill').style.color = "#892CDC";
+    document.querySelector('skill').style.animation = "purple-skills 8s ease-in-out infinite 3s";
+    document.getElementById('projecttext').style.fill = "#892CDC";
+    document.getElementById('projecttext').style.animation = "purple-text 3s infinite";
+    document.getElementById('icon-mail').src = "mail-purple.svg";
+    document.getElementById('icon-insta').src = "insta-purple.svg";
+    document.getElementById('icon-github').src = "github-purple.svg";
     window.onscroll = function(){purplenavbar()};
 }
 function applyorange(){
@@ -52,6 +73,13 @@ function applyorange(){
     document.getElementById('music-logo').src = "music.png";
     document.getElementById('car-logo').src = "car.png";
     document.getElementById('aboutimg').src = "about.svg";
+    document.getElementById('skill').style.color = "#e66d42";
+    document.querySelector('skill').style.animation = "orng-skills 8s ease-in-out infinite 3s";
+    document.getElementById('projecttext').style.fill = "#e66d42";
+    document.getElementById('projecttext').style.animation = "orng-text 3s infinite";
+    document.getElementById('icon-mail').src = "mail-orng.svg";
+    document.getElementById('icon-insta').src = "insta-orng.svg";
+    document.getElementById('icon-github').src = "github-orng.svg";
     window.onscroll = function(){orangenavbar()};
 }
 

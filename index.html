@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="styling.js"></script>
-
 </head>
 <body>
 <header>
@@ -29,16 +28,19 @@
         <a href="#contactme" class="contact" id="nav4">CONTACT ME</a>
 
             <div class="themes">
-                <button class="green" onclick="applygreen()"></button>
-                <button class="purple" onclick="applypurple()"></button>
-                <button class="blue" onclick="applyblue()"></button>
-                <button class="orange" onclick="applyorange()"></button>
+                <button id="green" class="green" onclick="applygreen()"></button>
+                <button id="purple" class="purple" onclick="applypurple()"></button>
+                <button id="blue" class="blue" onclick="applyblue()"></button>
+                <button id="orange" class="orange" onclick="applyorange()"></button>
             </div>
 
         </nav>
 
 
     </div>
+
+
+
 </header>
 
     <div class="one" id="home">
@@ -124,23 +126,23 @@
 
                 </div>
                 <div class="about-img" >
-                    <img id="aboutimg" src="about.svg" alt="ab-img"">
+                    <img id="aboutimg" src="about.svg" alt="ab-img">
                 </div>
             </div>
         </div>
 
         <div class="three">
 
-            <div class="skills">
+            <div class="skills" id="skill">
 
-                <span class="skills-text">M</span>
-                <span class="skills-text">Y</span>
-                <span class="skills-text">S</span>
-                <span class="skills-text">K</span>
-                <span class="skills-text">I</span>
-                <span class="skills-text">L</span>
-                <span class="skills-text">L</span>
-                <span class="skills-text">S</span>
+                <skill class="skills-text">M</skill>
+                <skill class="skills-text">Y</skill>
+                <skill class="skills-text">S</skill>
+                <skill class="skills-text">K</skill>
+                <skill class="skills-text">I</skill>
+                <skill class="skills-text">L</skill>
+                <skill class="skills-text">L</skill>
+                <skill class="skills-text">S</skill>
 
             </div>
 
@@ -188,7 +190,7 @@
 
 <div class="projects"   id="project">
     <svg viewbox="0 0 1350 200">
-        <text style="fill:#e66d42;">PROJECTS</text>
+        <text style="fill:#e66d42;" id="projecttext">PROJECTS</text>
     </svg>
 </div>
 
@@ -239,25 +241,25 @@
     <div class="five-one">
             <div id="div-email">
                 <a href="https://mail.google.com/mail/u/0/?fs=1&to=gogiaudit17@gmail.com&tf=cm" target="_blank">
-                <img src="email.svg" class="email social" alt="social"></a>
+                <img src="mail-orng.svg" class="email social" id="icon-mail" alt="social"></a>
             </div>
 
         <div id="div-insta">
             <a href="https://www.instagram.com/udit_gogia/?utm_medium=copy_link" target="_blank">
-                <img class="insta social" src="instaw.svg" alt="social">
+                <img class="insta social" src="insta-orng.svg" id="icon-insta" alt="social">
             </a>
         </div>
 
 
             <div id="div-github">
                 <a href="https://github.com/Udit-Gogia" target="_blank">
-                    <img class="github social" src="github.svg" alt="social" >
+                    <img class="github social" src="github-orng.svg" id="icon-github" alt="social" >
                 </a>
             </div>
 
             <div id="div-linkedin">
                 <a href="https://www.linkedin.com/in/udit-gogia-6351151bb/" target="_blank">
-                    <img class="linkedin social" src="linkedin.svg" alt="social">
+                    <img class="linkedin social" src="linkedin.svg" id="icon-linkedin" alt="social">
                 </a>
             </div>
         </div>
