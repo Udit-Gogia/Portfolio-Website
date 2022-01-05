@@ -17,6 +17,7 @@ function applygreen(){
     document.getElementById('icon-mail').src = "mail-green.svg";
     document.getElementById('icon-insta').src = "insta-green.svg";
     document.getElementById('icon-github').src = "github-green.svg";
+    document.getElementById('icon-linkedin').src = "linkedin-green.svg";
     window.onscroll = function(){greennavbar()};
 }
 function applyblue(){
@@ -38,6 +39,7 @@ function applyblue(){
     document.getElementById('icon-mail').src = "mail-blue.svg";
     document.getElementById('icon-insta').src = "insta-blue.svg";
     document.getElementById('icon-github').src = "github-blue.svg";
+    document.getElementById('icon-linkedin').src = "linkedin-blue.svg";
     window.onscroll = function(){bluenavbar()};
 }
 function applypurple(){
@@ -59,6 +61,7 @@ function applypurple(){
     document.getElementById('icon-mail').src = "mail-purple.svg";
     document.getElementById('icon-insta').src = "insta-purple.svg";
     document.getElementById('icon-github').src = "github-purple.svg";
+    document.getElementById('icon-linkedin').src = "linkedin-purple.svg";
     window.onscroll = function(){purplenavbar()};
 }
 function applyorange(){
@@ -80,6 +83,7 @@ function applyorange(){
     document.getElementById('icon-mail').src = "mail-orng.svg";
     document.getElementById('icon-insta').src = "insta-orng.svg";
     document.getElementById('icon-github').src = "github-orng.svg";
+    document.getElementById('icon-linkedin').src = "linkedin-orng.svg";
     window.onscroll = function(){orangenavbar()};
 }
 
