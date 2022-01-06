@@ -354,6 +354,7 @@ header:hover{
 
 .three{
     display: flex;
+
     flex-direction: column;
 }
 .three:hover{
@@ -683,7 +684,7 @@ svg text{
     text-align: center;
     margin-bottom: 0;
 }
-#link-ampv,#link-rrbt,#link-rpss{
+#link-drum,#link-rrbt,#link-rpss{
     text-decoration: none;
 }
 .swal-modal{

@@ -266,15 +266,15 @@ function greennavbar(){
 
 function proj1link() {
 
-    navigator.clipboard.writeText("https://github.com/Udit-Gogia/WEB-DEV-PROJECT-RRBT");
-    swal("WEB-DEV-PROJECT-RRBT's Github Link copied!", {
+    navigator.clipboard.writeText("https://github.com/Udit-Gogia/JS-Drum-Kit-");
+    swal("Drum Kit JS Project's Github Link Copied", {
         button: "Cool!",
         timer: 3000,
     });
 }
 function proj2link(){
     navigator.clipboard.writeText("https://github.com/Udit-Gogia/Rock-Paper-Scissor");
-    swal("Rock Paper Scissor's Github Link copied!",{
+    swal("Rock Paper Scissor's Github Link Copied!",{
         button: "Cool!",
         timer:3000,
     });
@@ -282,8 +282,8 @@ function proj2link(){
 
 function proj3link(){
 
-    navigator.clipboard.writeText("https://github.com/Udit-Gogia/PRIME_VIDEO-CLONE");
-    swal("Prime Video's Github Link copied!",{
+    navigator.clipboard.writeText("https://github.com/Udit-Gogia/WEB-DEV-PROJECT-RRBT");
+    swal("Rolls Royce Boat Tail's Github Link Copied!",{
         button: "Cool!",
         timer:3000,
     });
