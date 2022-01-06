@@ -3,6 +3,12 @@ body{
     margin: 0;
     padding: 0;
 }
+:root{
+    --default: #e66d42;
+    --green : #30E3CA;
+    --blue : #82ACFF;
+    --purple: #892CDC;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -17,7 +23,7 @@ html{
     border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover{
-    box-shadow: 0 0 10px #e66d42, 0 0 30px #e66d42 , 0 0 35px #e66d42 , 0 0 50px #e66d42, 0 0 60px #e66d42 , 0 0 70px #e66d42;
+    box-shadow: 0 0 10px var(--default), 0 0 30px var(--default) , 0 0 35px var(--default) , 0 0 50px var(--default), 0 0 60px var(--default) , 0 0 70px var(--default);
     background-color: white;
 }
 .top-right{
@@ -36,37 +42,37 @@ html{
 @keyframes light {
     from{
         color: #fff;
-        text-shadow: 0 0 5px #e66d42, 0 0 10px #e66d42, 0 0 15px #e66d42 , 0 0 20px #e66d42,
-        0 0 25px #e66d42, 0 0 30px #e66d42 , 0 0 35px #e66d42;
+        text-shadow: 0 0 5px var(--default), 0 0 10px var(--default), 0 0 15px var(--default) , 0 0 20px var(--default),
+        0 0 25px var(--default), 0 0 30px var(--default) , 0 0 35px var(--default);
     }
     to{
         color: white;
-        text-shadow: 0 0 5px #e66d42, 0 0 20px #e66d42 , 0 0 25px #e66d42 , 0 0 40px #e66d42, 0 0 50px #e66d42 , 0 0 60px #e66d42;
+        text-shadow: 0 0 5px var(--default), 0 0 20px var(--default) , 0 0 25px var(--default) , 0 0 40px var(--default), 0 0 50px var(--default) , 0 0 60px var(--default);
     }
 }
-@keyframes green-light{
-    from{
-        color: #fff;
-        text-shadow: 0 0 5px #30E3CA, 0 0 10px #30E3CA, 0 0 15px #30E3CA , 0 0 20px #30E3CA,
-        0 0 25px #30E3CA, 0 0 30px #30E3CA , 0 0 35px #30E3CA;
-    }
-    to{
-        color: white;
-        text-shadow: 0 0 5px #30E3CA, 0 0 20px #30E3CA , 0 0 25px #30E3CA , 0 0 40px #30E3CA, 0 0 50px #30E3CA , 0 0 60px #30E3CA;
-    }
+/*@keyframes green-light{*/
+/*    from{*/
+/*        color: #fff;*/
+/*        text-shadow: 0 0 5px #30E3CA, 0 0 10px #30E3CA, 0 0 15px #30E3CA , 0 0 20px #30E3CA,*/
+/*        0 0 25px #30E3CA, 0 0 30px #30E3CA , 0 0 35px #30E3CA;*/
+/*    }*/
+/*    to{*/
+/*        color: white;*/
+/*        text-shadow: 0 0 5px #30E3CA, 0 0 20px #30E3CA , 0 0 25px #30E3CA , 0 0 40px #30E3CA, 0 0 50px #30E3CA , 0 0 60px #30E3CA;*/
+/*    }*/
 
-}
-@keyframes blue-light{
-    from{
-        color: #fff;
-        text-shadow: 0 0 5px #82ACFF, 0 0 10px #82ACFF, 0 0 15px #82ACFF, 0 0 20px #82ACFF,
-        0 0 25px #82ACFF, 0 0 30px #82ACFF, 0 0 35px #82ACFF;
-    }
-    to{
-        color: white;
-        text-shadow: 0 0 5px #82ACFF, 0 0 20px #82ACFF, 0 0 25px #82ACFF, 0 0 40px #82ACFF, 0 0 50px #82ACFF, 0 0 60px #82ACFF;
-    }
-}
+/*}*/
+/*@keyframes blue-light{*/
+/*    from{*/
+/*        color: #fff;*/
+/*        text-shadow: 0 0 5px #82ACFF, 0 0 10px #82ACFF, 0 0 15px #82ACFF, 0 0 20px #82ACFF,*/
+/*        0 0 25px #82ACFF, 0 0 30px #82ACFF, 0 0 35px #82ACFF;*/
+/*    }*/
+/*    to{*/
+/*        color: white;*/
+/*        text-shadow: 0 0 5px #82ACFF, 0 0 20px #82ACFF, 0 0 25px #82ACFF, 0 0 40px #82ACFF, 0 0 50px #82ACFF, 0 0 60px #82ACFF;*/
+/*    }*/
+/*}*/
 @keyframes purple-light{
     from{
         color: #fff;
@@ -110,7 +116,7 @@ html{
     align-items: flex-start;
 }
 .im{
-    color:#e66d42;
+    color:var(--default);
     letter-spacing: 8px;
     margin-bottom: -12px;
     font-size: 70px;
@@ -124,7 +130,7 @@ html{
         color: black;
     }
    100%{
-       color: #e66d42;
+       color: var(--default);
 
    }
 }
@@ -221,7 +227,7 @@ nav>a{
     padding: 5px;
 }
 #nav1:hover,#nav2:hover,#nav3:hover,#nav4:hover{
-    text-shadow: 0 3px 0 #e66d42;
+    text-shadow: 0 3px 0 var(--default);
 }
 
 
@@ -249,7 +255,7 @@ header:hover{
     margin-bottom: 2%;
     font-weight: 700;
     height: 5%;
-    color: #e66d42;
+    color: var(--default);
 }
 .about-img{
     width:40%;
@@ -258,7 +264,7 @@ header:hover{
 }
 
 #metext{
-    color: #e66d42;
+    color: var(--default);
     font-family: Montserrat;
     font-size: 9rem;
     padding-left: 2%;
@@ -270,16 +276,16 @@ header:hover{
 }
 @keyframes orng-about {
    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
-       color: #e66d42;
+       color: var(--default);
        text-shadow: none;
    }
     18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%{
         color: white;
-        text-shadow: 0 0 10px #e66d42,
-                0 0 20px #e66d42,
-                0 0 40px #e66d42,
-                0 0 80px #e66d42,
-                0 0 160px #e66d42;
+        text-shadow: 0 0 10px var(--default),
+                0 0 20px var(--default),
+                0 0 40px var(--default),
+                0 0 80px var(--default),
+                0 0 160px var(--default);
     }
 }
 @keyframes blue-about {
@@ -362,7 +368,7 @@ header:hover{
 }
 skill{
     font-family: Montserrat;
-    color: #e66d42;
+    color: var(--default);
     font-size: 9rem;
     padding-left: 1%;
     font-weight: 700;
@@ -414,8 +420,8 @@ skill:nth-child(8){
         text-shadow: 1px 1px 20px #ffffff;
     }
     5%,15%,25%,35%,45%,55%,66%,75%,100%{
-        color: #e66d42;
-        text-shadow: 1px 1px 20px #e66d42;
+        color: var(--default);
+        text-shadow: 1px 1px 20px var(--default);
     }
 }
 @keyframes blue-skills {
@@ -444,7 +450,7 @@ skill:nth-child(8){
     flex-direction: column;
 }
 .skill{
-    color: #e66d42;
+    color: var(--default);
     font-size: 2.4rem;
     font-family: Montserrat;
     display: flex;
@@ -466,7 +472,7 @@ skill:nth-child(8){
     padding-left: 12%;
 }
 .skill-2{
-    color: #e66d42;
+    color: var(--default);
     font-size: 4rem;
     font-family: Montserrat;
 }
@@ -492,7 +498,7 @@ skill:nth-child(8){
 }
 
 .text-project{
-    color: #e66d42;
+    color: var(--default);
     margin-top: 10%;
     font-size: 8.5rem;
     font-family: Montserrat;
@@ -503,20 +509,20 @@ skill:nth-child(8){
 }
 @keyframes hawai {
     0% {
-        color: #e66d42;
+        color: var(--default);
     }
     50%{
         letter-spacing: 2rem;
         color: white;
-        text-shadow: 0 0 10px #e66d42,
-        0 0 20px #e66d42,
-        0 0 40px #e66d42,
-        0 0 80px #e66d42,
-        0 0 160px #e66d42;
+        text-shadow: 0 0 10px var(--default),
+        0 0 20px var(--default),
+        0 0 40px var(--default),
+        0 0 80px var(--default),
+        0 0 160px var(--default);
     }
 
     100%{
-        color: #e66d42;
+        color: var(--default);
     }
 }
 .four{
@@ -594,6 +600,7 @@ svg text{
     transform: translate(40px,145px);
     font-family: Montserrat;
     animation: orng-text 3s infinite;
+    fill: var(--default);
 }
 @keyframes orng-text{
     0%{
@@ -602,51 +609,13 @@ svg text{
 
     50%{
         stroke-dasharray: 100% 0;
-        text-shadow: 0 0 5px #e66d42, 0 0 15px #e66d42 , 0 0 25px #e66d42;
+        text-shadow: 0 0 5px var(--default), 0 0 15px var(--default) , 0 0 25px var(--default);
     }
     100%{
         stroke-dasharray: 0 50%;
     }
 }
-@keyframes purple-text{
-    0%{
-        stroke-dasharray: 0 50%;
-    }
 
-    50%{
-        stroke-dasharray: 100% 0;
-        text-shadow: 0 0 5px #892CDC, 0 0 15px #892CDC , 0 0 25px #892CDC;
-    }
-    100%{
-        stroke-dasharray: 0 50%;
-    }
-}
-@keyframes blue-text{
-    0%{
-        stroke-dasharray: 0 50%;
-    }
-
-    50%{
-        stroke-dasharray: 100% 0;
-        text-shadow: 0 0 5px #82ACFF, 0 0 15px #82ACFF , 0 0 25px #82ACFF;
-    }
-    100%{
-        stroke-dasharray: 0 50%;
-    }
-}
-@keyframes green-text{
-    0%{
-        stroke-dasharray: 0 50%;
-    }
-
-    50%{
-        stroke-dasharray: 100% 0;
-        text-shadow: 0 0 5px #30E3CA, 0 0 15px #30E3CA , 0 0 25px #30E3CA;
-    }
-    100%{
-        stroke-dasharray: 0 50%;
-    }
-}
 .div-text-rrbt{
     display: flex;
     flex-direction: column;
@@ -700,7 +669,7 @@ svg text{
     margin: 0;
 }
 .swal-button{
-    background-color: #e66d42;
+    background-color: var(--default);
 }
 .swal-overlay{
     background: rgba(0,0,0,0.7);
