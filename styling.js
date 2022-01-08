@@ -1,58 +1,36 @@
+function ColorIcons(rang){
+    document.getElementById('edu-logo').src = `/images/edu/edu-${rang}.png`;
+    document.getElementById('aim-logo').src = `/images/aim/aim-${rang}.png`;
+    document.getElementById('learning-logo').src = `/images/learning/learning-${rang}.png`;
+    document.getElementById('music-logo').src = `/images/music/music-${rang}.png`;
+    document.getElementById('car-logo').src = `/images/car/car-${rang}.png`;
+    document.getElementById('aboutimg').src = `images/about/about-${rang}.svg`;
+    document.getElementById('icon-mail').src = `/images/email/mail-${rang}.svg`;
+    document.getElementById('icon-insta').src = `/images/instagram/insta-${rang}.svg`;
+    document.getElementById('icon-github').src = `/images/github/github-${rang}.svg`;
+    document.getElementById('icon-linkedin').src = `/images/linkedin/linkedin-${rang}.svg`;
+    console.log(`color is ${rang}`)
+}
+
 function applygreen(){
-    document.getElementById('edu-logo').src = "edu-green.png";
-    document.getElementById('aim-logo').src = "aim-green.png";
-    document.getElementById('learning-logo').src = "learning-green.png";
-    document.getElementById('music-logo').src = "music-green.png";
-    document.getElementById('car-logo').src = "car-green.png";
-    document.getElementById('aboutimg').src = "about-green.svg";
-    document.getElementById('icon-mail').src = "mail-green.svg";
-    document.getElementById('icon-insta').src = "insta-green.svg";
-    document.getElementById('icon-github').src = "github-green.svg";
-    document.getElementById('icon-linkedin').src = "linkedin-green.svg";
     document.querySelector(':root').style = " --default: #30E3CA";
     window.onscroll = function(){greennavbar()};
+    ColorIcons("green");
 }
 function applyblue(){
-    document.getElementById('edu-logo').src = "edu-blue.png";
-    document.getElementById('aim-logo').src = "aim-blue.png";
-    document.getElementById('learning-logo').src = "learning-blue.png";
-    document.getElementById('music-logo').src = "music-blue.png";
-    document.getElementById('car-logo').src = "car-blue.png";
-    document.getElementById('aboutimg').src = "about-blue.svg";
-    document.getElementById('icon-mail').src = "mail-blue.svg";
-    document.getElementById('icon-insta').src = "insta-blue.svg";
-    document.getElementById('icon-github').src = "github-blue.svg";
-    document.getElementById('icon-linkedin').src = "linkedin-blue.svg";
     document.querySelector(':root').style = " --default: #82ACFF";
     window.onscroll = function(){bluenavbar()};
+    ColorIcons("blue");
 }
 function applypurple(){
-    document.getElementById('edu-logo').src = "edu-purple.png";
-    document.getElementById('aim-logo').src = "aim-purple.png";
-    document.getElementById('learning-logo').src = "learning-purple.png";
-    document.getElementById('music-logo').src = "music-purple.png";
-    document.getElementById('car-logo').src = "car-purple.png";
-    document.getElementById('aboutimg').src = "about-purple.svg";
-    document.getElementById('icon-mail').src = "mail-purple.svg";
-    document.getElementById('icon-insta').src = "insta-purple.svg";
-    document.getElementById('icon-github').src = "github-purple.svg";
-    document.getElementById('icon-linkedin').src = "linkedin-purple.svg";
     document.querySelector(':root').style = " --default: #892CDC";
     window.onscroll = function(){purplenavbar()};
+    ColorIcons("purple");
 }
 function applyorange(){
-    document.getElementById('edu-logo').src = "edu.png";
-    document.getElementById('aim-logo').src = "aim.png";
-    document.getElementById('learning-logo').src = "learning.png";
-    document.getElementById('music-logo').src = "music.png";
-    document.getElementById('car-logo').src = "car.png";
-    document.getElementById('aboutimg').src = "about.svg";
-    document.getElementById('icon-mail').src = "mail-orng.svg";
-    document.getElementById('icon-insta').src = "insta-orng.svg";
-    document.getElementById('icon-github').src = "github-orng.svg";
-    document.getElementById('icon-linkedin').src = "linkedin-orng.svg";
     document.querySelector(':root').style = " --default: #e66d42";
     window.onscroll = function(){orangenavbar()};
+    ColorIcons("orng");
 }
 
 window.onscroll = function(){orangenavbar()};
