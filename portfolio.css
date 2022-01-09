@@ -173,7 +173,7 @@ nav{
     justify-content: space-evenly;
     font-size: 18px;
     background-color: black;
-    cursor: url("/cursor/nav.png"), auto;
+    cursor: url("cursor/nav.png"), auto;
 }
 .purple,.blue,.green,.orange{
     border-radius: 50%;
@@ -202,20 +202,20 @@ nav>a{
     transition: transform 400ms ease-in-out;
 }
 .about-me:hover,.two:hover,.top-right:hover{
-    cursor: url("/cursor/user.png"), auto;
+    cursor: url("cursor/user.png"), auto;
 }
 .home:hover,.one:hover{
 
-    cursor: url("/cursor/home.png"), auto;
+    cursor: url("cursor/home.png"), auto;
 }
 .projects:hover{
-    cursor: url("/cursor/projects.png"), auto;
+    cursor: url("cursor/projects.png"), auto;
 }
 .contact:hover,.five:hover{
-    cursor: url("/cursor/contact.png"), auto;
+    cursor: url("cursor/contact.png"), auto;
 }
 .container{
-    cursor: url("/cursor/github.png"), auto;
+    cursor: url("cursor/github.png"), auto;
 }
 
 .projects{
@@ -364,7 +364,7 @@ header:hover{
     flex-direction: column;
 }
 .three:hover{
-    cursor: url("/cursor/skills.png"), auto;
+    cursor: url("cursor/skills.png"), auto;
 }
 skill{
     font-family: Montserrat;

@@ -1,15 +1,14 @@
 function ColorIcons(rang){
-    document.getElementById('edu-logo').src = `/images/edu/edu-${rang}.png`;
-    document.getElementById('aim-logo').src = `/images/aim/aim-${rang}.png`;
-    document.getElementById('learning-logo').src = `/images/learning/learning-${rang}.png`;
-    document.getElementById('music-logo').src = `/images/music/music-${rang}.png`;
-    document.getElementById('car-logo').src = `/images/car/car-${rang}.png`;
+    document.getElementById('edu-logo').src = `images/edu/edu-${rang}.png`;
+    document.getElementById('aim-logo').src = `images/aim/aim-${rang}.png`;
+    document.getElementById('learning-logo').src = `images/learning/learning-${rang}.png`;
+    document.getElementById('music-logo').src = `images/music/music-${rang}.png`;
+    document.getElementById('car-logo').src = `images/car/car-${rang}.png`;
     document.getElementById('aboutimg').src = `images/about/about-${rang}.svg`;
-    document.getElementById('icon-mail').src = `/images/email/mail-${rang}.svg`;
-    document.getElementById('icon-insta').src = `/images/instagram/insta-${rang}.svg`;
-    document.getElementById('icon-github').src = `/images/github/github-${rang}.svg`;
-    document.getElementById('icon-linkedin').src = `/images/linkedin/linkedin-${rang}.svg`;
-    console.log(`color is ${rang}`)
+    document.getElementById('icon-mail').src = `images/email/mail-${rang}.svg`;
+    document.getElementById('icon-insta').src = `images/instagram/insta-${rang}.svg`;
+    document.getElementById('icon-github').src = `images/github/github-${rang}.svg`;
+    document.getElementById('icon-linkedin').src = `images/linkedin/linkedin-${rang}.svg`;
 }
 
 function applygreen(){
